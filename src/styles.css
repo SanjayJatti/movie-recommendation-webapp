@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+.App {
+  margin: auto;
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 900px;
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+}
+.navigation {
+  background-color: RGB(6, 9, 43);
+  font-family: "Kalam", cursive;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding: 1rem 0rem;
+  color: white;
+  border-bottom-left-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: "pointer";
+  background-color: RGB(6, 9, 43);
+  color: white;
+  border-radius: 0.5rem;
+  border-width: medium;
+  border-color: #fff3b0;
+  margin-right: 0.7rem;
+  margin-top: 0.5rem;
+}
+footer {
+  background-color: RGB(6, 9, 43);
+  font-family: "Kalam", cursive;
+  padding: 1rem 0.5rem;
+  color: white;
+  border-top-right-radius: 1rem;
+}
