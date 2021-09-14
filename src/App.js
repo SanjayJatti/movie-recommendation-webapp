@@ -60,16 +60,24 @@ export default function App() {
           </button>
         ))}
       </div>
-      <div>
-        <ul >
+      <div
+        style={{
+          backgroundColor: " RGB(219, 97, 53)",
+          padding: "0.1rem",
+          margin: "1rem"
+        }}
+      >
+        <ul style={{ listStyle: "none" }}>
           {moviesList[currentGenre].map((movie) => (
-            <li  className="genre-list" >
-    
+            <li>
+              {""}
               <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
-                {movie.name}
+                {" "}
+                {movie.name}{" "}
               </div>
-              <div style={{ fontSize: "0.8rem", fontStyle: "italic" }}>
-              Rating:{movie.rating}
+              <div style={{ fontSize: "0.7rem", fontStyle: "italic" }}>
+                {" "}
+                {movie.rating}{" "}
               </div>
             </li>
           ))}
