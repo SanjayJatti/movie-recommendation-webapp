@@ -3,18 +3,26 @@ import "./styles.css";
 
 const moviesList = {
   Romantic: [
-    { name: "La La Land", rating: "10/10" },
-    { name: "Before Sunrise", rating: "9.5/10" },
-    { name: "Yeh Jawaani Hai Deewani", rating: "8/10" }
+    { name: "La La Land",
+     rating: "10/10" },
+    { name: "Before Sunrise",
+     rating: "9.5/10" },
+    { name: "Yeh Jawaani Hai Deewani",
+     rating: "8/10" }
   ],
   Action: [
-    { name: "Matrix", rating: "10/10" },
-    { name: "The Dark Night", rating: "10/10" },
-    { name: "Iron Man", rating: "8.5/10" }
+    { name: "Matrix",
+     rating: "10/10" },
+    { name: "The Dark Night",
+     rating: "10/10" },
+    { name: "Iron Man",
+     rating: "8.5/10" }
   ],
   Comedy: [
-    { name: "The Wolf of Wall Street", rating: "10/10" },
-    { name: "Hera Pheri", rating: "9/10" },
+    { name: "The Wolf of Wall Street",
+     rating: "10/10" },
+    { name: "Hera Pheri",
+     rating: "9/10" },
     { name: "Delhi Belly", rating: "9/10" }
   ],
   SciFi: [
@@ -52,24 +60,18 @@ export default function App() {
           </button>
         ))}
       </div>
-      <div
-        style={{
-          backgroundColor: " RGB(219, 97, 53)",
-          padding: "0.1rem",
-          margin: "1rem"
-        }}
-      >
-        <ul style={{ listStyle: "none" }}>
+      <div>
+        <ul >
           {moviesList[currentGenre].map((movie) => (
-            <li>
+            <li  className="genre-list" >
               {""}
               <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
                 {" "}
                 {movie.name}{" "}
               </div>
-              <div style={{ fontSize: "0.7rem", fontStyle: "italic" }}>
+              <div style={{ fontSize: "0.8rem", fontStyle: "italic" }}>
                 {" "}
-                {movie.rating}{" "}
+                Rating:{movie.rating}{" "}
               </div>
             </li>
           ))}
