@@ -64,14 +64,12 @@ export default function App() {
         <ul >
           {moviesList[currentGenre].map((movie) => (
             <li  className="genre-list" >
-              {""}
+    
               <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
-                {" "}
-                {movie.name}{" "}
+                {movie.name}
               </div>
               <div style={{ fontSize: "0.8rem", fontStyle: "italic" }}>
-                {" "}
-                Rating:{movie.rating}{" "}
+              Rating:{movie.rating}
               </div>
             </li>
           ))}
